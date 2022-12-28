@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+/**
+*!changing default styles of browser
+**/
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+/*border: 1px solid red;*/
+}
+
+body{
+    background: #f4f6f6;
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+}
+/**
+*! styles for the image
+**/
+.container .left-image{
+    background-image: url(../images/remote.jpg);
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+/**
+*!style for the right container
+**/
+.right{
+    margin-left: 40px;
+    margin-top: 30px;
+    white-space: nowrap;
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+    /*border: 1px solid blue;*/
+}
+
+h4{
+    margin-top: 90px;
+    text-align: center;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+/**
+*!styles for the form
+**/
+
+.container form{
+    position: relative;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 25px;
+    max-width: 400px;
+    margin-left: 120px;
+}
+
+.right input{
+    /*margin-left: 130px;*/
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #c4c4c4;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    width: 100%;
+}
+
+.right form input[type=text]:focus{
+    border: 2px solid #48C6B7;
+}
+
+.right form input[type=password]:focus{
+    border: 2px solid #48C6B7;
+}
+.right input[type=submit]{
+    background: #48C6B7;
+    color: rgb(245, 243, 243);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1 );
+    transition: .2s ease-in;
+}
+
+.right input[type=submit]:hover{
+    color: #fff;
+    background: #4cd4c4;
+    opacity: 0.8;
+
+}
+
+.right form #login-error {
+    position: absolute;
+    color: red;
+    font-size: 11px;
+    left: 31px;
+}
+.right form #username-error{
+position: absolute;
+right: 30px;
+top: 75px;
+color: red;
+    font-size: 11px;
+}
+
+.right form #password-error{
+    position: absolute;
+    right: 30px;
+    bottom: 110px;
+    color: red;
+    font-size: 11px;
+    }
+
+.right form div i{
+    color: seagreen;
+    font-size: 15px;
+}
+
+.right a{
+    color: #48C6B7;
+    font-size: 15px;
+    transition: all .2s ease-in;
+
+}
+
+.right a:hover{
+    color: #4de9d7;
+
+}
+
+.sign-in{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+
+}
+
+@media (max-width:768px) {
+
+    body{
+        overflow:auto;
+    }
+
+.container{
+    flex-direction: column;
+}
+
+.container .left-image{
+    background-image: url(../images/remote.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.right{
+    width: 100%;
+    height: 70vh;
+    margin-left: 0px;
+}
+
+h2{
+    font-size: medium;
+    text-align: center;
+    margin-left: 0;
+}
+
+h4{
+    margin-top: 50px;
+    text-align: center;
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+.right input{
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.sign-in{
+    text-align: center;
+    margin-top:10px;
+    margin-left: -40px;
+}
+
+.container form{
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 25px;
+    max-width: 400px;
+    margin-left: -2px;
+}
+}

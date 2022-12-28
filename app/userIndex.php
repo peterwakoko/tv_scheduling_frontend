@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/userIndex.css">
+</head>
+<body>
+    <header>
+            <div class="tv_system">Television Scheduling System</div> 
+            <div class="logout"><a href="staffLogin.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a></div> 
+    </header>
+
+    <div class="container-1">
+        <div></div>
+        <div>All Television Schedules</div> 
+        <div>Schedule Program</div>
+        <div></div>
+    </div>
+    
+<div class="container-2">
+    <div class="scheduleTable">
+        <table>
+            <thead>
+              <tr class="headings">
+                <th>Program Name</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+        
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">Live at 5</td>
+                <td align="center">01/09/2022 17:00:00</td>
+                <td align="center">01/09/2022 18:00:00</td>
+              </tr>
+              <tr>
+                <td align="center">Daily News</td>
+                <td align="center">01/09/2022 19:00:00</td>
+                <td align="center">01/09/2022 20:00:00</td>
+              </tr>
+              <tr>
+                <td align="center">News at 9</td>
+                <td align="center">01/09/2022 21:00:00</td>
+                <td align="center">01/09/2022 22:00:00</td>
+              </tr>
+              <tr>
+                <td align="center">Late Night Talk</td>
+                <td align="center">01/09/2022 23:00:00</td>
+                <td align="center">01/09/2022 01:00:00</td>
+              </tr>
+            <div>
+            </div>
+            </tbody>
+          </table>
+    </div>
+
+
+      <div class="scheduleForm">
+        <form>
+          <label>Program Name</label><br>
+          <select class="dropdown">
+              <option value="Live at 5">Live at 5</option>
+              <option>Daily News</option>
+              <option>News at 9</option>
+              <option>Late Night Talk</option>
+            </select><br>
+          <label>Start Time</label><br>
+          <input type="time">
+          <br>
+          <br>
+          <label>End Time</label><br>
+          <input type="time">
+          <br>
+      
+          <br>
+          <input class="btn-save" type="submit" value="Save">
+          <input class="btn-cancel" id="cancelButtonIndex" type="submit" value="Cancel">
+      </form>
+      </div>
+</div>
+</body>
+</html>

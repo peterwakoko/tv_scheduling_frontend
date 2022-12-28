@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/staffAdminLogin.css">
+    <title>Admin Login</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-image"></div>
+        <div class="right">
+                <h2>Welcome to the Television Scheduling System</h2>
+                <h4>Sign In to continue</h4>
+                <form>
+                    <input  type="text" placeholder="Username" id="username" onkeyup="validateUsername()">
+                    <div id="username-error"></div>
+                    <br>
+                    <input type="password" placeholder="Password" id="password" onkeyup="validatePassword()">
+                    <div id="password-error"></div>
+                    <br>
+                    <input type="submit" value="Login as Admin" onclick=" return validateLogin()">
+                    <div id="login-error"></div>
+                </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin-top: 5%;
+    background: #f4f6f6;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addUser{
+    font-weight: bold;
+    }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    position: relative;
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: 3px;
+    padding: 25px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    border: none;
+    outline: none;
+}
+
+.container form span{
+position: absolute;
+color: red;
+font-size: 11px;
+right: 30px;
+}
+
+.container form span  i{
+    color: seagreen;
+    font-size: 15px;
+}
+
+#staffId-error{
+position: absolute;
+top: 62px;
+}
+
+#fName-error{
+    position: absolute;
+    top: 123px;
+}
+
+#lName-error{
+    position: absolute;
+    top: 186px;
+}
+
+#phone-error{
+    position: absolute;
+    top: 249px;
+}
+
+#username-error{
+    position: absolute;
+    bottom: 148px;
+}
+
+#password-error{
+    position: absolute;
+    bottom: 85px;
+}
+
+#save-error{
+    position: absolute;
+    color: red;
+    font-size: 11px;
+    left: 27px;
+    bottom: 9px;
+
+}
+
+
+
+.container form input[type=text],input[type=password],input[type=tel]{
+    background: #f4f6f6;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.container form input[type=tel]:focus{
+    border: 1px solid #48C6B7;
+        }
+        .container form input[type=text]:focus{
+            border: 1px solid #48C6B7;
+    
+        }
+        .container form input[type=password]:focus{
+            border: 1px solid #48C6B7;
+    
+        }
+
+.container form .btn-save{
+    background: #48C6B7;
+    color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-top: 10px;
+    transition: all .2s ease-in;
+
+}
+
+
+
+.container form .btn-cancel{
+    background: rgb(219, 217, 217);
+    color: #000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-top: 10px;
+    transition: all .2s ease-in;
+}
+
+.container form .btn-save:hover{
+    cursor: pointer;
+    color: #fff;
+    background: #4cd4c4;
+    opacity: 0.8;
+}
+
+.container form .btn-cancel:hover{
+    cursor: pointer;
+    color: #fff;
+    background: rgb(233, 232, 232);
+    color: #000;
+    opacity: o.8;
+}
+
+.container form label{
+    font-size: 13px;
+}
